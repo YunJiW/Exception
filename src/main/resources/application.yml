@@ -3,3 +3,7 @@ spring:
     ansi:
       enabled: always
 
+server:
+  error:
+    whitelabel:
+      enabled: false
