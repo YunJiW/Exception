@@ -30,7 +30,8 @@ public class UserHandlerExceptionResolver implements HandlerExceptionResolver {
                     Map<String, Object> errorResult = new HashMap<>();
                     errorResult.put("ex", ex.getClass());
                     errorResult.put("message", ex.getMessage());
-                    String result = objectMapper.writeValueAsString(errorResult)
+                    String result = objectMapper.writeValueAsString(errorResult);
+
 
                     response.setContentType("application/json");
                     response.setCharacterEncoding("utf-8");
