@@ -5,5 +5,7 @@ spring:
 
 server:
   error:
+    include-message: always
+    include-exception: true
     whitelabel:
       enabled: false
